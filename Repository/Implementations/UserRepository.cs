@@ -48,7 +48,7 @@ namespace Repository.Implementations
             using (var conn = GetConnection())
             {
                 var reader = await conn.QueryMultipleAsync(
-                    "User_GetAll",
+                    "User_GetByEmail",
                     param: new
                     {
                         Email = email
